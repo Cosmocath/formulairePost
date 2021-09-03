@@ -1,0 +1,9 @@
+<p>post-list works!</p>
+<h2>Liste des posts du blog</h2>
+<button routerLink="/posts/add">Ajouter un utilisateur</button>
+
+<!-- Lister les utilisateurs -->
+
+<div class="flex">
+    <app-post-card [post]="post" *ngFor="let post of posts"></app-post-card>
+</div>
